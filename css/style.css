@@ -1,0 +1,169 @@
+*
+{
+    margin:0%;
+    padding: 0%;
+}
+section
+{
+    height: 100vh;
+}
+.navbar-brand p
+{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+
+#home .row
+{
+    height: 100%;
+}
+.about-wrapper
+{
+   margin-top: 200px;
+   margin-left: 40px;
+}
+.wrapper .static-txt
+{
+    font-size: 50px;
+    font-weight: 400;
+   position: relative;
+    top: 12px;
+    left: 20px;
+    font-weight: bold;
+}
+.wrapper .dynamic-txt li
+{
+    color: #ffc107!important;
+    font-size: 50px;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
+    animation: slide 6s steps(2) infinite;
+}
+@keyframes slide {
+    100%
+    {
+        bottom: 85px;
+    }
+    
+}
+.wrapper .dynamic-txt
+{
+    font-weight: 400;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.dynamic-txt li::after
+{
+    content: "";
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #212529!important;
+    animation:typing 3s steps(10) infinite;
+    background-color:#212529!important;
+}
+@keyframes typing {
+    40%,
+    60%
+    {
+        left: calc(100% + 30px);
+    }
+    100%
+    {
+        left:0;
+    }
+}
+
+.img-wrapper
+{ 
+    margin-top: 100px;
+}
+.slider
+{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.slider .slider-inner
+{
+    width: 300%;
+animation: banner 4s infinite;
+}
+.slider img
+{
+    width:33%;
+    height: 800px;
+    object-fit: cover;
+    float: left;
+}
+@keyframes banner {
+    0%{
+        margin-left: 0;
+    }
+    33%{
+margin-left: -100%;
+    }
+    66%{
+margin-left: -200%;
+    }
+    99%{
+margin-left: 0;
+    }
+
+}
+
+#resume .row h1
+{
+    border-bottom: 8px solid rgb(255, 217, 0);
+}
+#resume .row p
+{
+text-align: start;
+margin-top: 20px;
+
+}
+.resume-wrraper,.services-wrraper
+{
+    text-align: start;
+    
+}
+.summary-wrapper
+{
+    border-left: 3px solid rgb(255, 217, 0);
+}
+.summary-wrapper h3{
+    margin-left: 20px;
+}
+
+.summary-wrapper p{
+    margin-left: 20px;
+}
+.summary-wrapper .date
+{
+    background-color: rgb(163, 145, 145);
+    color: white;
+    display: inline-block;
+    width: 150px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    margin-left: 20px;
+}
+
+#services
+{
+   margin-top:100%;
+
+}
+
+#about
+{
+    margin-top:80%;
+}
+#contact
+{
+    margin-bottom:40%;
+}
